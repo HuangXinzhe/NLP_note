@@ -3,14 +3,16 @@ import numpy as np
 import pandas as pd
 
 # basic settings for DL_4_NER Project
-BASE_DIR = "F://NERSystem"
-CORPUS_PATH = "%s/train.txt" % BASE_DIR
+BASE_DIR = "06_dl_ner/NERSystem"
+CORPUS_PATH = f"{BASE_DIR}/train.txt"  # 语料库路径
 
-KERAS_MODEL_SAVE_PATH = '%s/Bi-LSTM-4-NER.h5' % BASE_DIR
-WORD_DICTIONARY_PATH = '%s/word_dictionary.pk' % BASE_DIR
-InVERSE_WORD_DICTIONARY_PATH = '%s/inverse_word_dictionary.pk' % BASE_DIR
-LABEL_DICTIONARY_PATH = '%s/label_dictionary.pk' % BASE_DIR
-OUTPUT_DICTIONARY_PATH = '%s/output_dictionary.pk' % BASE_DIR
+KERAS_MODEL_SAVE_PATH = f'{BASE_DIR}/Bi-LSTM-4-NER.h5'  # 模型保存路径
+
+WORD_DICTIONARY_PATH = f'{BASE_DIR}/word_dictionary.pk'
+InVERSE_WORD_DICTIONARY_PATH = f'{BASE_DIR}/inverse_word_dictionary.pk'
+LABEL_DICTIONARY_PATH = f'{BASE_DIR}/label_dictionary.pk'
+OUTPUT_DICTIONARY_PATH = f'{BASE_DIR}/output_dictionary.pk'
+
 
 CONSTANTS = [
              KERAS_MODEL_SAVE_PATH,
